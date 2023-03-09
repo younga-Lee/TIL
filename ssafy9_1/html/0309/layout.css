@@ -1,0 +1,28 @@
+.header {
+  height: 100px;
+  background-color: aquamarine;
+}
+
+.section-left {
+  height: 500px;background-color: bisque;
+  width: 30%;
+}
+
+.section-right {
+  height: 500px;
+  background-color: skyblue;
+  width: 70%;
+}
+
+.footer {
+  height: 100px;
+  background-color: yellowgreen;
+  
+  /* float다음에 형식을 유지하고 싶다면 바로 다음에 clear 
+  기억 못해도 됨*/
+  clear: both;
+}
+
+.left {
+  float: left;
+}

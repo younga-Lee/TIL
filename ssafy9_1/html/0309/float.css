@@ -1,0 +1,11 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background: orange;
+
+  /* 그림을 왼쪽, 글자는 바로 옆 */
+  float: left;
+  /* 그림 좀만 띄우기*/
+  margin-right: 20px; 
+
+}

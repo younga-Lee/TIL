@@ -1,0 +1,91 @@
+.container {
+  
+  flex-direction: column;
+  display: flex;
+  
+  align-items: center;
+  justify-content: space-around;
+  font-size: 13px;
+
+}
+
+.info {
+  height: 30px;
+  background-color: red;
+  border-radius: 5px;
+}
+
+
+p{
+  margin: 10px;
+  color: white;
+  font-size: 13px;
+  padding: 5px;
+}
+
+
+hr{
+  width: 100%;
+}
+
+.hrcss{
+border: 1px solid blue;
+}
+
+
+.login {
+  width: 400px;
+  height: 300px;
+  border: 1px solid gainsboro;
+}
+
+.row {
+  margin: 20px;
+  line-height: 10%;
+}
+
+#pwd {
+  width: 350px;
+  height: 32px;
+  font-size: 15px;
+  border: 1px solid gainsboro;
+  border-radius: 3px;
+  outline: none;
+  padding-left: 10px;
+}
+
+#userId {
+  width: 350px;
+  height: 32px;
+  font-size: 15px;
+  border: 1px solid gainsboro;
+  border-radius: 3px;
+  outline: none;
+  padding-left: 10px;
+}
+
+
+.btsign button {
+  color: white;
+  background-color: rgb(10, 132, 10);
+  border: 1px;
+  border-radius: 3px;
+  width: 200px;
+  height: 30px;
+  position: relative;top: 20px; left: 80px;
+}
+
+h3 {
+  text-align: center;
+  font: bold;
+}
+
+h4{
+  font: bold;
+}
+
+a {
+  position: relative;
+  bottom: 10px;
+  left: 230px;
+}
