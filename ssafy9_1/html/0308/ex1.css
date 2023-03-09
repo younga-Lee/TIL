@@ -1,0 +1,47 @@
+.box {
+
+  width: 100px;
+  height: 100px;
+}
+
+.big-box{
+  position: relative;
+  margin: 100px auto 500px;
+  border: 5px solid black;
+
+  width: 500px;
+  height: 500px;
+}
+
+.small-box{
+  width: 100px;
+  height: 100px;
+}
+
+#red{
+  background-color: red;
+  /* 큰 사각형 내부의 우측 하단 모서리에 빨간 사각형 위치시키기 */
+  position: absolute;
+  top: 400px;
+  left: 400px;
+}
+#gold{
+  background-color: gold;
+  /* 브라우저 하단에서 50px, 우측에서 50px위치에 고정하기 */
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+#green{
+  background-color: green;
+  /* 큰 사각형 가운데에 초록색 박스를 위치 */
+  position: absolute;
+  top: 200px;
+  left: 200px;
+}
+#blue{
+  background-color: blue;
+}
+#pink{
+  background-color: pink;
+}

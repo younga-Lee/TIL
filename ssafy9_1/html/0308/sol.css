@@ -1,0 +1,9 @@
+/* 자손 결합자 */
+p {
+  color:blue;
+}
+
+/* 자식 결합자 */
+div > p {
+  color:crimson;
+}
