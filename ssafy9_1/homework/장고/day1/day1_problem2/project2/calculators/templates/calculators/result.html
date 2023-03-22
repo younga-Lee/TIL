@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h1>계산 결과</h1>
+  <p>{{first}} + {{second}} = {{ first|add:second }}</p>
+  <p>{{first}} * {{second}} = {%  widthratio first 1 second %}</p>
+  <p>{{first}} - {{second}} = {{ first|add:minus}}</p>
+  <p>{% if second != '0' %}
+       {{first}} / {{second}} = {%  widthratio first second 1 %}
+     {% else %}
+        <p>계산할 수 없습니다</p>
+     {% endif %}
+{% endblock content %}
