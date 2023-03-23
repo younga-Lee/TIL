@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>NEW</h1>
+  <form action="{% url 'articles:new' %}">
+   <label for="title">Title: </label>
+   <input type="text" name='title'>
+   <label for="content">Content: </label>
+   <textarea name="content"></textarea>
+   <input type="submit">
+  </form>
+  <hr>
+  <a href="{% url 'articles.index' %}">back</a>
+{% endblock content %}
+
+
+
