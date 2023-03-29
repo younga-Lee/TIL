@@ -5,8 +5,8 @@ def dfs(n, cnt, sm):
             ans += 1
         return
 
-    dfs(n + 1, cnt + 1, sm + lst[n])
-    dfs(n + 1, cnt, sm)
+    dfs(n + 1, cnt + 1, sm + lst[n]) #선택하였을 때
+    dfs(n + 1, cnt, sm) #안하였을때
 
 
 

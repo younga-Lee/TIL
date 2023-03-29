@@ -4,7 +4,7 @@ def dfs(i, j, sm):
         return
     if ans <= sm:  # sm이 ans보다 크다면 더 계산하지 않아도 벗어나자
         return
-    if i == N - 1 and j == N - 1:
+    if i == N - 1 and j == N - 1: #도착했을 때
         ans = sm
         return
 
