@@ -5,7 +5,6 @@ def msort(s, e):
     msort(s, m) #왼쪽
     msort(m+1, e) #오른쪽
 
-    #merge
     k = 0
     l, r = s, m+1 #왼쪽과 오른쪽에서 가장 작은 숫자의 위치
     while l <= m or r <= e:
@@ -27,7 +26,7 @@ def msort(s, e):
             r += 1
             k += 1
 
-    #tmp에 있던거 arr에 덮어쓰기기
+    #tmp에 있던거 arr에 덮어쓰기
     i = 0
     while i < k :
         arr[s+i] = tmp[i]

@@ -3,7 +3,7 @@ def perm(n, sm):
     if n == N: #종료시점
         ans = min(ans, sm)
         return
-    for j in range(N):
+    for j in range(1, N):
         v[n] = 1
         if v[j] == 0:
             v[j] = 1

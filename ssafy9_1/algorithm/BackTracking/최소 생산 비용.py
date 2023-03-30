@@ -18,6 +18,7 @@ for tc in range(1, T+1):
     arr = [list(map(int, input().split())) for _ in range(N)]
     ans = 10**N #최소값구하기
     v = [0]*N
+    lst = []
     dfs(0, 0)
 
     print(f'#{tc} {ans}')
