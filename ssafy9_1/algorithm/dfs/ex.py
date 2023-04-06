@@ -1,32 +1,30 @@
-'''
-4 5
-00110
-00011
-11111
-00000
-'''
+from collections import deque
+def solution(priorities, location):
+    answer = 0
+    N = len(priorities)
 
-def dfs(x, y):
-  #주어진 범위 벗어나면 즉시 종료
-  if x <= -1 or x >= N or y <=-1 or y >= M:
-    return False
-  #현재 노드를 아직 방문하지 않았다면
-  if arr[x][y] == 0:
-    arr[x][y] = 1 #방문처리
-    #상하좌우 재귀적으로 호출
-    dfs(x-1, y)
-    dfs(x, y-1)
-    dfs(x, y+1)
-    dfs(x+1,y)
-    return True
-  return False
+    priorities = deque(priorities)
+    q.append(priorities.popleft())
+    lst = [] #인쇄목록
+    n = 0
+    while priorities:
+        J = q.pop()
+        for i in range(len(priorities)):
+            if priorities[0] < priorities[i]:
+                priorities.append(J)
+                q.append(priorities.popleft())
+                n = (n+1)%N
+                break
+        else:
+            q.append(priorities.popleft())
+            n = (n+1)%N
+            lst.append(n)
+    return lst
 
-
-N, M = map(int, input().split())
-arr = [list(map(int, list(input()))) for _ in range(N)]
-result = 0
-for i in range(N):
-  for j in range(M):
-    if dfs(i,j) == True:
-      result += 1
-print(result)
+lst = solution([1, 1, 9, 1, 1, 1], 0)
+print(lst)
+for j in range(len(lst)):
+    if lst[j] == 0:
+        print(j+1)
+else:
+    print(len(lst)+1)
