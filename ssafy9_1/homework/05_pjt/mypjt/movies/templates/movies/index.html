@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>INDEX</h1>
+<a href="{% url 'movies:create' %}">[CREATE]</a>
+<hr>
+{% for movie in movies %}
+  <a href="{% url 'movies:detail' movie.id %}">{{ movie.title }}</a>
+  <hr>
+  {% endfor %}
+{% endblock content %}

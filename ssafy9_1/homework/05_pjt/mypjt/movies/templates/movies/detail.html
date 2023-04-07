@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>DETAIL</h1>
+<hr>
+<p>{{movie.title}}</p>
+<p>{{movie.description}}</p>
+<a href="{% url 'movies:update' movie.id %}">UPDATE</a>
+<form action="{% url 'movies:delete' movie.id %}" method="POST">
+  {% csrf_token %}
+  <button class="btn">삭제하기</button>
+</form>
+<a href="{% url 'movies:index'%}">BACK</a>
+<hr>
+{% endblock content %}
