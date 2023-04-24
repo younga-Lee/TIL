@@ -1,9 +1,6 @@
 def dfs(n, sm):
     global ans
-    if sm > N: #가지치기
-        return
-
-    if n == N:
+    if sm >= N:
         if sm == N:
             ans += 1
         return
