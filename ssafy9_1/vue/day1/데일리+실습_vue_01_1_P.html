@@ -9,8 +9,8 @@
 <body>
   <div id="app">
     <h1>Popular Movies</h1>
-    <div>
-      <li v-for="movie in movieinfo" :key="movie.title"> {{movie}} </li>
+    <div v-for="result in movieinfo.results" :key="title_id">
+      <li v-if="result.vote_average >= 8">  {{result.title}} </li>
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -419,6 +419,7 @@
     "total_results": 10000
   }
       },
+
     })
   </script>
 </body>
